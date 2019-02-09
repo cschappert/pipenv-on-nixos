@@ -31,6 +31,7 @@ stdenv.mkDerivation {
     PATH=$HOME/.local/bin:$PATH
     PYTHONPATH=$HOME/.local/lib/python3.6/site-packages:$PYTHONPATH
     pip install --user pipenv
+    pipenv install
 
   '';
 }
