@@ -28,8 +28,8 @@ stdenv.mkDerivation {
     # set SOURCE_DATE_EPOCH so that we can use python wheels
     SOURCE_DATE_EPOCH=$(date +%s)
 
-    PATH=/home/chris/.local/bin:$PATH
-    PYTHONPATH=/home/chris/.local/lib/python3.6/site-packages:$PYTHONPATH
+    PATH=$HOME/.local/bin:$PATH
+    PYTHONPATH=$HOME/.local/lib/python3.6/site-packages:$PYTHONPATH
     pip install --user pipenv
 
   '';
